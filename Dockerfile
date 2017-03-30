@@ -8,9 +8,8 @@ USER root
 RUN apt-get update && apt-get install -y -q \
     python
 
-
-RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-1.6.2-bin-hadoop2.6.tgz | tar -xz -C /opt
-RUN cd /opt && ln -s ./spark-1.6.2-bin-hadoop2.6 spark
+RUN curl -s http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.6.tgz | tar -xz -C /opt
+RUN cd /opt && ln -s ./spark-2.1.0-bin-hadoop2.6 spark
 
 #        master    worker
 #     +---------+---------+
